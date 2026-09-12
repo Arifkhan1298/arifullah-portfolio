@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae — Arifullah | Software Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #070b14;
+      --accent: #8b5cf6;
+      --secondary-accent: #22d3ee;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #070b14;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .cv-actions-bar {
+      max-width: 850px;
+      margin: 0 auto 24px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back {
+      background: #111827;
+      border: 1px solid #24324a;
+      color: #f8fafc;
+    }
+    .btn-back:hover {
+      background: #1e293b;
+      border-color: var(--accent);
+      color: var(--secondary-accent);
+    }
+
+    .btn-print {
+      background: linear-gradient(135deg, #22d3ee 0%, #8b5cf6 100%);
+      color: #070b14;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(34, 211, 238, 0.35);
+    }
+    .btn-print:hover {
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.45);
+      transform: translateY(-2px);
+    }
+
+    /* CV Document Card */
+    .cv-sheet {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 50px 60px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+    }
+
+    /* Header */
+    .cv-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .cv-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .cv-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .cv-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .cv-contacts a, .cv-contacts span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: inherit;
+      text-decoration: none;
+    }
+    .cv-contacts a:hover { color: var(--accent); }
+
+    /* Section Headings */
+    .cv-section {
+      margin-bottom: 28px;
+    }
+
+    .cv-section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cv-section-title i {
+      color: var(--accent);
+    }
+
+    /* Education Item */
+    .edu-item {
+      margin-bottom: 16px;
+    }
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--primary);
+    }
+    .edu-school {
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .edu-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Skills Grid */
+    .skills-cv-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .skill-cv-group h4 {
+      font-size: 0.95rem;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .skill-cv-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .skill-cv-tag {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #334155;
+    }
+
+    /* Languages */
+    .lang-list {
+      display: flex;
+      gap: 24px;
+      font-size: 0.925rem;
+    }
+    .lang-item strong {
+      color: var(--primary);
+    }
+
+    /* Print settings */
+    @media print {
+      body {
+        background: #ffffff !important;
+        padding: 0 !important;
+      }
+      .cv-actions-bar {
+        display: none !important;
+      }
+      .cv-sheet {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cv-sheet { padding: 30px 20px; }
+      .cv-header { flex-direction: column; }
+      .skills-cv-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-actions-bar">
+    <a href="index.html" class="btn btn-back">
+      <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <button type="button" class="btn btn-print" onclick="window.print()">
+      <i class="fas fa-print"></i> Print / Save as PDF
+    </button>
+  </div>
+
+  <article class="cv-sheet">
+    <!-- Header -->
+    <header class="cv-header">
+      <div>
+        <h1 class="cv-name">Arifullah</h1>
+        <div class="cv-title">Software Engineer | Web &amp; App Developer</div>
+        <div class="cv-contacts">
+          <span><i class="fas fa-location-dot"></i> Peshawar, Pakistan</span>
+          <a href="https://wa.me/923138983870" target="_blank"><i class="fab fa-whatsapp"></i> 0313 8983870</a>
+          <a href="https://github.com/arifkhan1298" target="_blank"><i class="fab fa-github"></i> arifkhan1298</a>
+          <a href="https://facebook.com/gemvault098" target="_blank"><i class="fab fa-facebook"></i> gemvault098</a>
+          <a href="https://instagram.com/gemvault098" target="_blank"><i class="fab fa-instagram"></i> gemvault098</a>
+          <a href="https://www.tiktok.com/@arifkhan27920" target="_blank"><i class="fab fa-tiktok"></i> @arifkhan27920</a>
+          <a href="https://www.snapchat.com/add/arifkhan.8586" target="_blank"><i class="fab fa-snapchat"></i> arifkhan.8586</a>
+          <a href="https://www.linkedin.com/in/arif-khan-088b19401" target="_blank"><i class="fab fa-linkedin"></i> arif-khan-088b19401</a>
+          <a href="mailto:arifkhankkhan002@gmail.com"><i class="fas fa-envelope"></i> arifkhankkhan002@gmail.com</a>
+        </div>
+      </div>
+      <div style="flex-shrink: 0;">
+        <img src="ChatGPT Image Aug 17, 2026, 04_33_54 AM.png" alt="Arifullah" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 2px solid var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="cv-section">
+      <h2 class="cv-section-title"><i class="fas fa-user"></i> Professional Profile</h2>
+      <p style="font-size: 0.95rem; color: #334155;">
+        Passionate and driven Software Engineer specializing in modern web, application, and software development. 
+        Equipped with strong fundamentals in programming logic (C, C++, Python), modern frontend frameworks (HTML5, CSS3, JavaScript ES6+), 
+        and database management (MySQL, SQL, MS Access). Dedicated to writing clean, maintainable, and high-performance code with a commitment 
+        to continuous learning and building functional digital experiences.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="cv-section">
+      <h2 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="edu-item">
+        <div class="edu-header">
+          <span>Matriculation (Science)</span>
+          <span style="font-size: 0.9rem; color: var(--text-muted);">Completed</span>
+        </div>
+        <div class="edu-school">G.H.S.S No. 3 Peshawar</div>
+        <p class="edu-desc">Core coursework in Computer Science, Mathematics, Physics, and Chemistry.</p>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-header">
+          <span>Continuous Higher Education &amp; Software Engineering</span>
+          <span style="font-size: 0.9rem; color: var(--text-muted);">Present</span>
+        </div>
+        <div class="edu-school">Self-Directed &amp; Academic Training</div>
+        <p class="edu-desc">Advancing technical expertise in software architecture, algorithm design, full-stack web development, and application building.</p>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="cv-section">
+      <h2 class="cv-section-title"><i class="fas fa-code"></i> Technical Skills &amp; Competencies</h2>
+      <div class="skills-cv-grid">
+        <div class="skill-cv-group">
+          <h4>Web &amp; Frontend Development</h4>
+          <div class="skill-cv-tags">
+            <span class="skill-cv-tag">HTML5</span>
+            <span class="skill-cv-tag">CSS3</span>
+            <span class="skill-cv-tag">JavaScript (ES6+)</span>
+            <span class="skill-cv-tag">Responsive UI/UX</span>
+            <span class="skill-cv-tag">Full-Stack Development</span>
+          </div>
+        </div>
+
+        <div class="skill-cv-group">
+          <h4>Programming &amp; Core Logic</h4>
+          <div class="skill-cv-tags">
+            <span class="skill-cv-tag">Python</span>
+            <span class="skill-cv-tag">C Language</span>
+            <span class="skill-cv-tag">C++</span>
+            <span class="skill-cv-tag">Algorithms &amp; Data Structures</span>
+            <span class="skill-cv-tag">App Development</span>
+          </div>
+        </div>
+
+        <div class="skill-cv-group">
+          <h4>Database &amp; Office Suite</h4>
+          <div class="skill-cv-tags">
+            <span class="skill-cv-tag">MySQL (Relational DB &amp; SQL)</span>
+            <span class="skill-cv-tag">MS Access (Databases)</span>
+            <span class="skill-cv-tag">MS Excel (Formulas &amp; Data)</span>
+            <span class="skill-cv-tag">MS Word</span>
+            <span class="skill-cv-tag">MS PowerPoint</span>
+            <span class="skill-cv-tag">MS Office Suite</span>
+          </div>
+        </div>
+
+        <div class="skill-cv-group">
+          <h4>Engineering Practices</h4>
+          <div class="skill-cv-tags">
+            <span class="skill-cv-tag">Clean Code</span>
+            <span class="skill-cv-tag">Git / GitHub Version Control</span>
+            <span class="skill-cv-tag">Problem Solving</span>
+            <span class="skill-cv-tag">Performance Optimization</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Offered -->
+    <section class="cv-section">
+      <h2 class="cv-section-title"><i class="fas fa-briefcase"></i> Core Services &amp; Capabilities</h2>
+      <ul style="padding-left: 20px; font-size: 0.925rem; color: #334155;">
+        <li><strong>Web &amp; Web Application Development:</strong> High-performance, cross-browser responsive websites and dynamic single-page web applications.</li>
+        <li><strong>Software Development:</strong> Structured backend logic, algorithmic scripts, and desktop utility software using C, C++, and Python.</li>
+        <li><strong>App Development:</strong> Mobile-friendly, touch-optimized user interfaces and responsive web applications.</li>
+        <li><strong>Database Solutions:</strong> Custom relational database architectures, form management, and queries in MS Access.</li>
+      </ul>
+    </section>
+
+    <!-- Languages -->
+    <section class="cv-section">
+      <h2 class="cv-section-title"><i class="fas fa-language"></i> Languages</h2>
+      <div class="lang-list">
+        <div class="lang-item"><strong>Urdu:</strong> Fluent / Native</div>
+        <div class="lang-item"><strong>Pashto:</strong> Native</div>
+        <div class="lang-item"><strong>English:</strong> Professional Working Proficiency</div>
+      </div>
+    </section>
+  </article>
+
+</body>
+</html>
