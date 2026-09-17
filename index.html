@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Performance Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Arifullah | Software Engineer &amp; Web App Developer</title>
+  <meta name="title" content="Arifullah | Software Engineer &amp; Web App Developer">
+  <meta name="description"
+    content="Explore the portfolio, projects, skills and development journey of Arifullah — Software Engineer and Web &amp; App Developer.">
+  <meta name="keywords"
+    content="Arifullah, Software Engineer, Web Developer, App Developer, Full-Stack Developer, Python, C++, HTML, CSS, JavaScript, Portfolio">
+  <meta name="author" content="Arifullah">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/arifkhan1298">
+  <meta property="og:title" content="Arifullah | Software Engineer &amp; Web App Developer">
+  <meta property="og:description"
+    content="Explore the portfolio, projects, skills and development journey of Arifullah — Software Engineer and Web &amp; App Developer.">
+  <meta property="og:image" content="favicon.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- FontAwesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core CSS Files -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arifullah",
+    "jobTitle": "Software Engineer & Web App Developer",
+    "url": "https://github.com/arifkhan1298",
+    "sameAs": [
+      "https://github.com/arifkhan1298",
+      "https://www.linkedin.com/in/arif-khan-088b19401",
+      "https://facebook.com/gemvault098",
+      "https://instagram.com/gemvault098",
+      "https://www.tiktok.com/@arifkhan27920",
+      "https://www.snapchat.com/add/arifkhan.8586"
+    ],
+    "knowsAbout": ["Web Development", "Software Engineering", "Full-Stack Development", "App Development", "Python", "MySQL", "C++", "JavaScript", "HTML5", "CSS3"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- 2. CUSTOM CURSOR (Desktop only) -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- 3. BACKGROUND 3D CANVAS LAYER -->
+  <div id="bg-canvas-container" aria-hidden="true"></div>
+
+  <!-- 4. FLOATING NAVIGATION BAR -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="main-navbar" aria-label="Main Navigation">
+      <a href="#home" class="nav-brand" aria-label="Arifullah Portfolio Home">
+        <div class="brand-icon">A</div>
+        <span>ARIFULLAH</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Light and Dark Mode"
+          title="Toggle Theme">
+          <i class="fas fa-gear"></i>
+        </button>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Mobile Menu"
+          aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="content-wrapper">
+
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Hero Left Content -->
+          <div class="hero-text-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span data-bind="availability">Available for Opportunities</span>
+            </div>
+
+            <p class="hero-greeting">Hi, I'm Arifullah</p>
+
+            <h1 class="hero-title">
+              Software Engineer <br>
+              <span class="gradient-text">&amp; Web &amp; App Developer</span>
+            </h1>
+
+            <div class="typewriter-wrapper">
+              <span>I specialize in</span>
+              <span id="typewriter-text" class="gradient-text">Software Engineering</span>
+              <span class="cursor-blink">|</span>
+            </div>
+
+            <p class="hero-description">
+              I build modern websites, web applications, software solutions and mobile experiences with a strong focus
+              on clean design, functionality, performance and modern technology.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-layer-group"></i>
+                <span>Explore My Work</span>
+              </a>
+              <a href="cv.html" target="_blank" class="btn btn-secondary btn-download-cv">
+                <i class="fas fa-file-arrow-down"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="hero-socials">
+              <a href="https://wa.me/923138983870" target="_blank" rel="noopener noreferrer" class="social-btn"
+                data-social="whatsapp" aria-label="WhatsApp (0313 8983870)" title="WhatsApp: 0313 8983870">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://facebook.com/gemvault098" target="_blank" rel="noopener noreferrer" class="social-btn"
+                data-social="facebook" aria-label="Facebook (gemvault098)" title="Facebook: gemvault098">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://instagram.com/gemvault098" target="_blank" rel="noopener noreferrer" class="social-btn"
+                data-social="instagram" aria-label="Instagram (gemvault098)" title="Instagram: @gemvault098">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@arifkhan27920" target="_blank" rel="noopener noreferrer"
+                class="social-btn" data-social="tiktok" aria-label="TikTok (arifkhan27920)"
+                title="TikTok: @arifkhan27920">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="https://www.snapchat.com/add/arifkhan.8586" target="_blank" rel="noopener noreferrer"
+                class="social-btn" data-social="snapchat" aria-label="Snapchat (arifkhan.8586)"
+                title="Snapchat: arifkhan.8586">
+                <i class="fab fa-snapchat"></i>
+              </a>
+              <a href="https://github.com/arifkhan1298" target="_blank" rel="noopener noreferrer" class="social-btn"
+                data-social="github" aria-label="GitHub (arifkhan1298)" title="GitHub: arifkhan1298">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/arif-khan-088b19401" target="_blank" rel="noopener noreferrer"
+                class="social-btn" data-social="linkedin" aria-label="LinkedIn (arif-khan-088b19401)"
+                title="LinkedIn: arif-khan-088b19401">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right: 3D Holographic Photo Showcase -->
+          <div class="hero-photo-wrapper">
+            <div class="photo-3d-card" data-tilt data-tilt-max="15" data-tilt-scale="1.04" tabindex="0" role="region"
+              aria-label="Interactive Profile Hologram">
+              <!-- Holographic ambient backlight -->
+              <div class="photo-glow-layer"></div>
+
+              <!-- Cybernetic corner brackets -->
+              <span class="cyber-bracket corner-tl"></span>
+              <span class="cyber-bracket corner-tr"></span>
+              <span class="cyber-bracket corner-bl"></span>
+              <span class="cyber-bracket corner-br"></span>
+
+              <!-- Floating 3D Badges -->
+              <div class="floating-badge badge-top-left" data-tilt-depth="35">
+                <i class="fas fa-terminal"></i>
+                <span>Software Engineer</span>
+              </div>
+
+              <div class="floating-badge badge-bottom-right" data-tilt-depth="35">
+                <i class="fas fa-code-merge"></i>
+                <span>Clean Architecture</span>
+              </div>
+
+              <!-- Inner Photo Container -->
+              <div class="photo-inner-frame" id="hero-photo-frame">
+                <!-- 1. Profile Image (Hidden by default, reveals with animation on hover) -->
+                <img id="hero-profile-img" src="ChatGPT Image Aug 17, 2026, 04_33_54 AM.png"
+                  alt="Arifullah - Software Engineer &amp; Web App Developer" class="profile-main-image"
+                  loading="eager">
+
+                <!-- 2. Cyber Laser Scanning Beam (sweeps down on hover) -->
+                <div class="photo-laser-scanner" aria-hidden="true">
+                  <div class="laser-beam-line"></div>
+                  <div class="laser-beam-flare"></div>
+                </div>
+
+                <!-- 3. Holographic Scanlines & Glitch Flash Overlay -->
+                <div class="photo-hologram-scanlines" aria-hidden="true"></div>
+                <div class="photo-glitch-overlay" aria-hidden="true"></div>
+
+                <!-- 4. Encrypted Holographic Shroud (visible when cursor is away) -->
+                <div class="photo-shroud-cover" aria-hidden="true">
+                  <div class="shroud-grid-pattern"></div>
+
+                  <!-- Animated Radar Rings -->
+                  <div class="shroud-radar">
+                    <div class="radar-circle circle-1"></div>
+                    <div class="radar-circle circle-2"></div>
+                    <div class="radar-circle circle-3"></div>
+                    <div class="radar-sweep-beam"></div>
+                  </div>
+
+                  <!-- Central Biometric Hub -->
+                  <div class="shroud-core">
+                    <div class="shroud-icon-ring">
+                      <i class="fas fa-fingerprint shroud-icon"></i>
+                      <div class="ring-pulse"></div>
+                    </div>
+                    <span class="shroud-badge"><i class="fas fa-lock"></i> CLASSIFIED IDENTITY</span>
+                    <h4 class="shroud-title">IDENTITY ENCRYPTED</h4>
+                    <p class="shroud-sub"><span class="cyber-pulse-dot"></span> BIOMETRIC LOCK ACTIVE</p>
+                  </div>
+
+                  <!-- Hover CTA Prompt -->
+                  <div class="shroud-prompt">
+                    <i class="fas fa-arrow-pointer shroud-pointer-icon"></i>
+                    <span>HOVER TO REVEAL</span>
+                  </div>
+                </div>
+
+                <!-- 5. Decrypted Verified Access Badge (shows on hover) -->
+                <div class="photo-revealed-tag" aria-hidden="true">
+                  <span class="tag-status-indicator"></span>
+                  <i class="fas fa-shield-check"></i>
+                  <span>IDENTITY VERIFIED &bull; ARIFULLAH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-strip">
+          <div class="stat-item">
+            <div class="stat-number" id="hero-projects-count" data-count="8" data-suffix="+">8+</div>
+            <div class="stat-label">Featured Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="15" data-suffix="+">15+</div>
+            <div class="stat-label">Core Technologies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="6" data-suffix="+">6+</div>
+            <div class="stat-label">Development Services</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="100" data-suffix="%">100%</div>
+            <div class="stat-label">Commitment to Quality</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ABOUT ME SECTION
+         ==================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-user-astronaut"></i> Discover</div>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Dedicated to building high-performance, functional digital products with clean
+            engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-content">
+            <p>
+              I'm <strong>Arifullah</strong>, a passionate Software Engineer interested in building modern websites,
+              applications and digital experiences.
+            </p>
+            <p>
+              I enjoy learning new technologies, solving programming problems and turning ideas into functional digital
+              products.
+            </p>
+            <p>
+              My goal is to continuously improve my technical skills and build high-quality software that provides real
+              value.
+            </p>
+
+            <div style="margin-top: 24px;">
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fas fa-paper-plane"></i>
+                <span>Get In Touch</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Feature Cards Grid -->
+          <div class="about-features-grid">
+            <div class="about-card" data-tilt>
+              <div class="about-card-icon"><i class="fas fa-graduation-cap"></i></div>
+              <h3>Education</h3>
+              <p>Matric — G.H.S.S No. 3 Peshawar with ongoing studies in software development.</p>
+            </div>
+
+            <div class="about-card" data-tilt>
+              <div class="about-card-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Web Development</h3>
+              <p>Modern frontend interfaces and full-stack solutions with responsive designs.</p>
+            </div>
+
+            <div class="about-card" data-tilt>
+              <div class="about-card-icon"><i class="fas fa-cubes"></i></div>
+              <h3>Software Engineering</h3>
+              <p>Problem-solving and algorithmic logic with C, C++, and Python.</p>
+            </div>
+
+            <div class="about-card" data-tilt>
+              <div class="about-card-icon"><i class="fas fa-bolt"></i></div>
+              <h3>Continuous Learning</h3>
+              <p>Constantly mastering new development tools, frameworks, and best practices.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SKILLS SECTION
+         ==================================================================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-microchip"></i> Expertise</div>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">A curated set of core programming languages, web technologies, and productivity
+            suites.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Dynamically Populated from CONFIG.skills -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PROJECTS & GITHUB SECTION
+         ==================================================================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-code-branch"></i> Portfolio</div>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real public repositories and software projects showcasing clean code and practical
+            solutions.</p>
+        </div>
+
+        <!-- Project Controls Toolbar (Search & Live Count) -->
+        <div class="projects-toolbar">
+          <div class="project-search-wrapper">
+            <i class="fas fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            <input type="text" id="project-search-input" class="project-search-input"
+              placeholder="Search projects by name, language, or tech (e.g. Python, MySQL, Web)..."
+              aria-label="Search projects" autocomplete="off" spellcheck="false">
+            <button type="button" id="project-search-clear" class="project-search-clear" aria-label="Clear search"
+              title="Clear search" style="display: none;">
+              <i class="fas fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="projects-count-pill" id="projects-count-pill" title="Total Projects in Portfolio">
+            <i class="fas fa-folder-tree"></i>
+            <span id="projects-count-text"><strong id="projects-count-num">8</strong> Projects Total</span>
+          </div>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" id="project-filters-bar">
+          <button type="button" class="project-filter-btn active" data-filter="all">All Projects <span class="filter-count" id="count-all">(8)</span></button>
+          <button type="button" class="project-filter-btn" data-filter="web">Web &amp; Full-Stack <span class="filter-count" id="count-web">(2)</span></button>
+          <button type="button" class="project-filter-btn" data-filter="python">Python <span class="filter-count" id="count-python">(1)</span></button>
+          <button type="button" class="project-filter-btn" data-filter="programming">C / C++ &amp; MySQL <span class="filter-count" id="count-programming">(3)</span></button>
+          <button type="button" class="project-filter-btn" data-filter="apps">Apps <span class="filter-count" id="count-apps">(1)</span></button>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated from GitHub API or Curated Showcase -->
+        </div>
+
+        <!-- GitHub Live Status Notice -->
+        <div class="github-sync-wrapper" id="github-live-notice">
+          <div class="github-sync-badge">
+            <i class="fab fa-github"></i>
+            <span>GitHub Profile: <strong>arifkhan1298</strong></span>
+            <a href="https://github.com/arifkhan1298" target="_blank" rel="noopener noreferrer" class="btn-text-glow">
+              View Profile <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECT DETAILS MODAL -->
+    <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-window">
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close Project Modal">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-inner-content" id="modal-project-content">
+          <!-- Populated on click -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         EDUCATION & TIMELINE SECTION
+         ==================================================================== -->
+    <section class="section education-section" id="education">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-user-graduate"></i> Background</div>
+          <h2 class="section-title">Education &amp; <span class="gradient-text">Academic Timeline</span></h2>
+          <p class="section-subtitle">Foundational schooling and ongoing dedication to software engineering mastery.</p>
+        </div>
+
+        <div class="timeline-container" id="education-timeline">
+          <!-- Dynamically Populated from CONFIG.education -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         DEVELOPMENT JOURNEY SECTION
+         ==================================================================== -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-route"></i> Roadmap</div>
+          <h2 class="section-title">My Development <span class="gradient-text">Journey</span></h2>
+          <p class="section-subtitle">How I progressively learned programming, built applications, and refined my craft.
+          </p>
+        </div>
+
+        <div class="journey-grid" id="journey-timeline">
+          <!-- Dynamically Populated from CONFIG.journey -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SERVICES SECTION
+         ==================================================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-cubes-stacked"></i> Offerings</div>
+          <h2 class="section-title">Development <span class="gradient-text">Services</span></h2>
+          <p class="section-subtitle">End-to-end software, web application, and database solutions built with care.</p>
+        </div>
+
+        <div class="services-grid" id="services-grid">
+          <!-- Dynamically Populated from CONFIG.services -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         RESUME / CV SECTION
+         ==================================================================== -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-file-contract"></i> Qualifications</div>
+          <h2 class="section-title">Resume &amp; <span class="gradient-text">Curriculum Vitae</span></h2>
+          <p class="section-subtitle">Summary of qualifications, language proficiencies, and technical proficiencies.
+          </p>
+        </div>
+
+        <div class="resume-card-box">
+          <div class="resume-header-row">
+            <div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 4px;">Arifullah</h3>
+              <p style="color: var(--text-accent); font-weight: 600;">Software Engineer | Web &amp; App Developer</p>
+            </div>
+            <a href="cv.html" target="_blank" class="btn btn-primary btn-download-cv">
+              <i class="fas fa-file-arrow-down"></i>
+              <span>Download / Print CV</span>
+            </a>
+          </div>
+
+          <div class="resume-summary-grid">
+            <div class="resume-column">
+              <h4><i class="fas fa-language"></i> Language Proficiencies</h4>
+              <div class="languages-grid" id="languages-grid">
+                <!-- Dynamically Populated from CONFIG.languages -->
+              </div>
+            </div>
+
+            <div class="resume-column">
+              <h4><i class="fas fa-circle-check"></i> Core Competencies</h4>
+              <ul class="service-features" style="margin-top: 12px;">
+                <li><i class="fas fa-check-circle"></i> <span>Software Engineering &amp; Problem Solving (C, C++,
+                    Python)</span></li>
+                <li><i class="fas fa-check-circle"></i> <span>Full-Stack Web Development (HTML5, CSS3, JavaScript
+                    ES6+)</span></li>
+                <li><i class="fas fa-check-circle"></i> <span>Responsive &amp; Mobile-First Application Layouts</span>
+                </li>
+                <li><i class="fas fa-check-circle"></i> <span>Relational Databases &amp; Office Automation (MS Access,
+                    Excel)</span></li>
+                <li><i class="fas fa-check-circle"></i> <span>Clean Code, High Performance &amp; Accessibility
+                    (WCAG)</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CONTACT SECTION
+         ==================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag"><i class="fas fa-envelope-open-text"></i> Connect</div>
+          <h2 class="section-title">Let's Build <span class="gradient-text">Something Great</span></h2>
+          <p class="section-subtitle">Have an idea, project or opportunity? Let's connect and turn it into something
+            meaningful.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Info Cards -->
+          <div class="contact-info-cards">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/923138983870" target="_blank" rel="noopener noreferrer" class="contact-info-card"
+              data-social="whatsapp">
+              <div class="contact-card-icon" style="color: #25d366;"><i class="fab fa-whatsapp"></i></div>
+              <div class="contact-card-text">
+                <h4>WhatsApp</h4>
+                <p>0313 8983870 / Direct Chat</p>
+              </div>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com/gemvault098" target="_blank" rel="noopener noreferrer"
+              class="contact-info-card" data-social="facebook">
+              <div class="contact-card-icon" style="color: #1877f2;"><i class="fab fa-facebook-f"></i></div>
+              <div class="contact-card-text">
+                <h4>Facebook</h4>
+                <p>gemvault098</p>
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/gemvault098" target="_blank" rel="noopener noreferrer"
+              class="contact-info-card" data-social="instagram">
+              <div class="contact-card-icon" style="color: #e1306c;"><i class="fab fa-instagram"></i></div>
+              <div class="contact-card-text">
+                <h4>Instagram</h4>
+                <p>@gemvault098</p>
+              </div>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@arifkhan27920" target="_blank" rel="noopener noreferrer"
+              class="contact-info-card" data-social="tiktok">
+              <div class="contact-card-icon" style="color: #ff0050;"><i class="fab fa-tiktok"></i></div>
+              <div class="contact-card-text">
+                <h4>TikTok</h4>
+                <p>@arifkhan27920</p>
+              </div>
+            </a>
+
+            <!-- Snapchat -->
+            <a href="https://www.snapchat.com/add/arifkhan.8586" target="_blank" rel="noopener noreferrer"
+              class="contact-info-card" data-social="snapchat">
+              <div class="contact-card-icon" style="color: #eab308;"><i class="fab fa-snapchat"></i></div>
+              <div class="contact-card-text">
+                <h4>Snapchat</h4>
+                <p>arifkhan.8586</p>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/arifkhan1298" target="_blank" rel="noopener noreferrer"
+              class="contact-info-card" data-social="github">
+              <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-card-text">
+                <h4>GitHub</h4>
+                <p>github.com/arifkhan1298</p>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/arif-khan-088b19401" target="_blank" rel="noopener noreferrer"
+              class="contact-info-card" data-social="linkedin">
+              <div class="contact-card-icon" style="color: #0077b5;"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-card-text">
+                <h4>LinkedIn</h4>
+                <p>linkedin.com/in/arif-khan-088b19401</p>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:arifkhankkhan002@gmail.com" class="contact-info-card" data-social="email">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-card-text">
+                <h4>Email</h4>
+                <p>arifkhankkhan002@gmail.com</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <!-- Hidden Silent Iframe so NO other tab or website ever opens -->
+            <iframe name="contact_silent_frame" id="contact_silent_frame"
+              style="display:none; width:0; height:0; border:0; position:absolute; visibility:hidden;" tabindex="-1"
+              aria-hidden="true"></iframe>
+            <form id="contact-form" action="https://formsubmit.co/arifkhankkhan002@gmail.com" method="POST"
+              target="contact_silent_frame">
+              <!-- FormSubmit Anti-Spam & Delivery Config -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" value="New Portfolio Contact Message for Arifullah">
+              <input type="hidden" name="_autoresponse"
+                value="Thank you for reaching out to Arifullah! Your message has been received successfully, and I will respond to you shortly.">
+
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name *</label>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. John Doe"
+                  required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email *</label>
+                <input type="email" id="contact-email" name="email" class="form-control"
+                  placeholder="e.g. john@example.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message *</label>
+                <textarea id="contact-message" name="message" class="form-control"
+                  placeholder="Describe your project, question, or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+
+              <div id="contact-status-box" class="contact-status-box" style="display: none;"></div>
+
+              <div class="direct-contact-alternatives">
+                <span>Fast Direct Options:</span>
+                <a id="direct-gmail-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=arifkhankkhan002@gmail.com"
+                  target="_blank" rel="noopener noreferrer" class="direct-contact-link" title="Open in Gmail Web">
+                  <i class="fas fa-envelope"></i> Send via Gmail
+                </a>
+                <a id="direct-wa-btn" href="https://wa.me/923138983870" target="_blank" rel="noopener noreferrer"
+                  class="direct-contact-link" title="Chat on WhatsApp">
+                  <i class="fab fa-whatsapp"></i> WhatsApp Chat
+                </a>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="nav-brand">
+          <div class="brand-icon">A</div>
+          <span>ARIFULLAH</span>
+        </div>
+
+        <ul class="nav-menu" style="display: flex; gap: 20px; flex-wrap: wrap;">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="hero-socials">
+          <a href="https://wa.me/923138983870" target="_blank" rel="noopener noreferrer" class="social-btn"
+            data-social="whatsapp" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://facebook.com/gemvault098" target="_blank" rel="noopener noreferrer" class="social-btn"
+            data-social="facebook" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/gemvault098" target="_blank" rel="noopener noreferrer" class="social-btn"
+            data-social="instagram" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@arifkhan27920" target="_blank" rel="noopener noreferrer" class="social-btn"
+            data-social="tiktok" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.snapchat.com/add/arifkhan.8586" target="_blank" rel="noopener noreferrer"
+            class="social-btn" data-social="snapchat" aria-label="Snapchat" title="Snapchat"><i
+              class="fab fa-snapchat"></i></a>
+          <a href="https://github.com/arifkhan1298" target="_blank" rel="noopener noreferrer" class="social-btn"
+            data-social="github" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/arif-khan-088b19401" target="_blank" rel="noopener noreferrer"
+            class="social-btn" data-social="linkedin" aria-label="LinkedIn" title="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Arifullah. All rights reserved. Crafted with clean code and high performance.</p>
+        <a href="#home" class="btn-text-glow" style="font-size: 0.9rem;">
+          Back to Top <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js CDN (Lightweight 3D WebGL Library) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+    integrity="sha512-dLxUelApnYxpgeh6VWcMhCRRoHVNxFjYs5UMmnpkAs5dXWl70hsLsND21qN90Zgk0514GSVDlsdrvBfpEOZ5JM=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Application Modular Scripts -->
+  <script src="config.js?v=3.0"></script>
+  <script src="tilt.js?v=3.0"></script>
+  <script src="github-api.js?v=3.0"></script>
+  <script src="three-scene.js?v=3.0"></script>
+  <script src="app.js?v=3.0"></script>
+</body>
+
+</html>
